@@ -1,0 +1,45 @@
+.detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 24px 32px;
+  background: rgba(28, 29, 34, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  color: #e9eaed;
+}
+
+.detail-row .stick {
+  width: 140px;
+  height: 280px;
+  flex-shrink: 0;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.detail-name {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+}
+
+.detail-line {
+  margin: 0;
+  font-size: 18px;
+}
+
+.sneakiness {
+  margin: 8px 0 16px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}

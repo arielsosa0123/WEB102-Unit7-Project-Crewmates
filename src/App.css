@@ -1,0 +1,72 @@
+/* Override index.css so the app fills the full viewport width */
+#root {
+  width: 100%;
+  max-width: none;
+  border-inline: none;
+}
+
+.layout {
+  display: flex;
+  min-height: 100svh;
+}
+
+.app-shell {
+  flex: 1;
+  min-height: 100svh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  box-sizing: border-box;
+  padding: 40px 24px;
+
+  background: linear-gradient(135deg, #2b2d31 0%, #d4d6da 100%);
+
+  /* default color of stick man */
+  --stick-color: #000000;
+}
+
+.page-title {
+  margin: 0;
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.section-title {
+  margin: 8px 0 0;
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.banner {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+.stick {
+  width: 40%;
+  max-width: 180px;
+  height: 220px;
+
+  /* Background color shows through the masked PNG, tinting the figure */
+  background-color: var(--stick-color);
+
+  /* Mask shape comes from the image URL set inline on the element */
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.35));
+}
